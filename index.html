@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<!-- HTML Header -->
+
+<head>
+    <!-- Load Global JavaScript -->
+    <script src="script.js"></script>
+    <script>addHTMLhead('Diana Galindo', 'Diana Galindo portfolio homepage', '');</script>
+
+    <!-- Navigation dropdown necessary scripts-->
+    <script integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- Toggle and animation for the navigation dropdown -->
+    <script>
+        $(document).ready(function () {
+            $('.navbar_button').on('click', function () {
+                $('.animated-icon').toggleClass('open');
+            });
+        });
+    </script>
+</head>
+
+<body id="portfolio_homepage">
+    <main>
+        <!-- Homepage introduction section -->
+        <section arial-label="Homepage. Diana's introduction" class="intro">
+            <header class="desktop_wrapper">
+                <div id="global_nav">&nbsp;</div>
+                <script>globalNav('')</script>
+            </header>
+            <div class="content-wrapper desktop_wrapper">
+                <div class="intro-text">
+                    <h1>Diana Galindo <img src="images/Avatar_emoji.png" width="40px" alt=""></h1>
+                    <p class="subheader">Creative technologist</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor vel aliquam quam deleniti harum
+                        veniam,
+                        architecto nobis optio necessitatibus sequi soluta dolores, non deserunt praesentium ex culpa
+                        id,
+                        laborum nisi.architecto nobis optio necessitatibus sequi soluta dolores, non deserunt
+                        praesentium ex culpa id,
+                        laborum nisi.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Homepage About section -->
+        <section arial-label="About me" id="about_me" class="about">
+            <div class="content-wrapper about_content desktop_wrapper">
+                <div class="left_side">
+                    <h2 class="about_header">About <span> me</span></h2>
+                    <img src="images/about_me.png" alt="Black and white photograph of Diana">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor vel aliquam quam deleniti harum
+                        veniam,
+                        architecto nobis optio necessitatibus sequi soluta dolores, non deserunt praesentium ex culpa
+                        id,
+                        laborum nisi.
+                    </p>
+                </div>
+                <div class="right_side">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor vel aliquam quam deleniti harum
+                        veniam,
+                        architecto nobis optio necessitatibus sequi soluta dolores, non deserunt praesentium ex culpa
+                        id,
+                        laborum nisi.
+                    </p>
+                    <div class="skills margin-bottom">
+                        <h3>Skills proficiency</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor vel aliquam quam deleniti
+                            harum
+                            veniam,
+                            architecto nobis optio necessitatibus sequi soluta dolores, non deserunt praesentium ex
+                            culpa id,
+                            laborum nisi.
+                        </p>
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="images/skills_test.png" />
+                            <source media="(min-width: 768px)" srcset="images/skills_test_desktop.png" />
+                            <img src="images/skills_test.png" alt="Diana's skills described in percentages. HTML - 90%. CSS - 60%. JavaScript - 90%. Python - 60%.">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="content-wrapper contact_cta desktop_wrapper">
+                <div class="margin-bottom">
+                    <a href="mailto:dianamilena24@gmail.com" class="contact_me">Contact me!</a>
+                    <a href="Diana_CV_2022.pdf" target="_blank" class="resume">Resume</a>
+                </div>
+            </div>
+            <!-- Divider and end of page menu -->
+            <div class="content-wrapper end_menu">
+                <div class="margin-bottom">
+                    <img class="divider margin-bottom" src="images/divider.png" width="10px" alt="">
+                    <span><a href="Projects/portfolio_projects.html">Projects</a></span>&#8226
+                    <span><a href="Lab/portfolio_lab.html">Lab</a></span>&#8226
+                    <span><a href="#global_nav">Back to top</a></span>
+                </div>
+            </div>
+
+            <!-- Homepage about section (bottom in mobile view, sticky to the left in desktop view) -->
+            <section class="social_media margin-bottom">
+                <a href="https://git.arts.ac.uk/17518357" target="_blank"><img class="github" src="images/github-logo.png"
+                        alt="Github logo. Go to Diana's profile."></a>
+                <a href="https://www.instagram.com/diana_milenagc/" target="_blank"><img class="instagram" src="images/instagram.png"
+                        alt="Instagram logo. Go to Diana's Instagram profile"></a>
+                <a href="https://www.linkedin.com/in/galindo-diana/" target="_blank"><img class="linkedin" src="images/linkedin.png"
+                        alt="Linkedin logo. Go to Diana's Linkedin profile"></a>
+                <img class="social_deco" src="images/social_media_deco.png" alt="">
+                <!--No alt text, as it is a decorative img-->
+            </section>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- Loading global footer -->
+    <footer id="globalFooter"></footer>
+    <script>addFooter('');</script>
+
+</body>
+
+</html>
