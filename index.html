@@ -41,7 +41,7 @@
             </header>
             <div class="content-wrapper desktop_wrapper">
                 <div class="intro-text">
-                    <h1>Diana Galindo <img src="images/Avatar_emoji.png" width="40px" alt=""></h1>
+                    <h1>Diana Galindo <!--<img src="images/Avatar_emoji.png" width="40px" alt="">--></h1>
                     <p class="subheader">Creative technologist</p>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor vel aliquam quam deleniti harum
                         veniam,
@@ -51,16 +51,90 @@
                         praesentium ex culpa id,
                         laborum nisi.
                     </p>
+                     <img class="presentation-img" src="images/about_me.png" alt="Black and white photograph of Diana">
                 </div>
             </div>
         </section>
-
+        <!-- Homepage Projects Section -->
+         <section id="portfolio_projects" class="general_background sitewide_menu">
+            <div class="margin-bottom margin_fix_desktop">
+                <h2>Projects</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor vel aliquam quam deleniti harum
+                    veniam,
+                    architecto nobis optio necessitatibus sequi soluta dolores, non deserunt praesentium ex culpa
+                    id,
+                    laborum nisi.architecto nobis optio necessitatibus sequi soluta dolores.
+                </p>
+            </div>
+            <!-- Filter buttons/ example by W3 referenced in the script section-->
+            <div class="filter_by_container margin-bottom margin_fix_desktop">
+                <h2><img class="filter_img" src="images/filter.png" width="20px" alt=""> Filter by:</h2>
+                <div id="project_filter">
+                    <button arial-label="All Projects" class="btn_filter active"
+                        onclick="applyfilter('all')">All</button>
+                    <button arial-label="Web design projects" class="btn_filter"
+                        onclick="applyfilter('web')">Web</button>
+                    <button aria-label="Creative Computing projects" class="btn_filter"
+                        onclick="applyfilter('cc')">Creative Computing</button>
+                </div>
+            </div>
+    
+            <!-- Elements that will be filtered. A single element can belong to multiple categories -->
+            <div class="filter_container margin-bottom">
+                <!-- Home Salon Project -->
+                <div class="filter web all">
+                    <a href="../project_homeSalon/index.html">
+                        <img src="Projects/images/home_salon.png"
+                            alt="Project: Home Salon. Category: Web design. Year: 2021.">
+                        <div class="project_headers">
+                            <span>Web Design &#8226 2021</span>
+                            <h3>Home Salon</h3>
+                        </div>
+                    </a>
+                </div>
+                <!-- Metaverse Project -->
+                <div class="filter cc project_inactive">
+                    <img src="Projects/images/comingSoon_metaverse.png"
+                        alt="Project: Metaverse 0.01. Category: Creative Computing. Year: 2022.">
+                    <div class="project_headers">
+                        <span>Creative computing &#8226 2022</span>
+                        <h3>Metaverse 0.01</h3>
+                    </div>
+                </div>
+                <!-- TFL physical computing map Project -->
+                <div class="filter cc project_inactive">
+                    <img src="Projects/images/comingSoon_physical.png"
+                        alt="Project: TFL map. Category: Creative Computing. Year: 2022.">
+                    <div class="project_headers">
+                        <span>Creative computing &#8226 2022</span>
+                        <h3>TFL map</h3>
+                    </div>
+                </div>
+                <!-- DGFS superdrug project -->
+                <div class="filter web project_inactive">
+                    <img src="Projects/images/comingSoon_sdcsr.png"
+                        alt="Project: Doing Good Feels Super. Category: Web design. Year: 2019 - 2021.">
+                    <div class="project_headers">
+                        <span>Web design &#8226 2019 - 2021</span>
+                        <h3>Doing good feels super</h3>
+                    </div>
+                </div>
+                <!-- Superdrug Own Brand web design Project -->
+                <div class="filter web project_inactive">
+                    <img src="Projects/images/comingSoon_sdOwnbrand.png"
+                        alt="Project: Superdrug Own Brand Landing Page. Category: Web design. Year: 2019.">
+                    <div class="project_headers">
+                        <span>Web design &#8226 2020</span>
+                        <h3>Superdrug Own Brand</h3>
+                    </div>
+                </div>
+            </div>
+         </section>
+        
         <!-- Homepage About section -->
         <section arial-label="About me" id="about_me" class="about">
             <div class="content-wrapper about_content desktop_wrapper">
                 <div class="left_side">
-                    <h2 class="about_header">About <span> me</span></h2>
-                    <img src="images/about_me.png" alt="Black and white photograph of Diana">
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor vel aliquam quam deleniti harum
                         veniam,
                         architecto nobis optio necessitatibus sequi soluta dolores, non deserunt praesentium ex culpa
@@ -75,21 +149,6 @@
                         id,
                         laborum nisi.
                     </p>
-                    <div class="skills margin-bottom">
-                        <h3>Skills proficiency</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor vel aliquam quam deleniti
-                            harum
-                            veniam,
-                            architecto nobis optio necessitatibus sequi soluta dolores, non deserunt praesentium ex
-                            culpa id,
-                            laborum nisi.
-                        </p>
-                        <picture>
-                            <source media="(max-width: 767px)" srcset="images/skills_test.png" />
-                            <source media="(min-width: 768px)" srcset="images/skills_test_desktop.png" />
-                            <img src="images/skills_test.png" alt="Diana's skills described in percentages. HTML - 90%. CSS - 60%. JavaScript - 90%. Python - 60%.">
-                        </picture>
-                    </div>
                 </div>
             </div>
             <div class="content-wrapper contact_cta desktop_wrapper">
@@ -127,6 +186,66 @@
     <!-- Loading global footer -->
     <footer id="globalFooter"></footer>
     <script>addFooter('');</script>
+
+    <!-- Filter for projects/ Why is this script not working when it is placed on the global Script ???-->
+    <!-- Reference: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_filter_elements -->
+    <script>
+        applyfilter("all")
+        function applyfilter(c) {
+            var getFilter, i;
+            getFilter = document.getElementsByClassName("filter");
+            if (c == "all") c = "";
+            //Add the 'show' class from the elements that were filtered. 
+            //Remove the 'show' class from the elements that are not selected.
+            for (i = 0; i < getFilter.length; i++) {
+                removeClass(getFilter[i], "show");
+                // why does it need to be greater than -1 ???
+                if (getFilter[i].className.indexOf(c) > -1) addClass(getFilter[i], "show");
+            }
+        }
+
+        //Show filtered elements (create addClass function)
+
+        function addClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                    element.className += " " + arr2[i];
+                }
+            }
+        }
+
+        //Hide elements that are not selected
+
+        function removeClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+        //Add the active class to the current filter button 
+
+        var btnContainer = document.getElementById("project_filter");
+        var btns = btnContainer.getElementsByClassName("btn_filter");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+
+    </script>
 
 </body>
 

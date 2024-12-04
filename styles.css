@@ -572,8 +572,10 @@ footer {
   left: 50%;
 }
 
-#portfolio_homepage #global_nav .menu_text {
+#global_nav .menu_text {
   color: #030b17;
+  font-weight: 500;
+  text-transform: uppercase;
   font-weight: 500;
   text-transform: uppercase;
 }
@@ -606,6 +608,11 @@ footer {
   min-height: 579px;
   ;
 }
+.intro .presentation-img  {
+  width: 100%;
+  position: relative;
+  z-index: 0;
+}
 
 .subheader {
   text-transform: uppercase;
@@ -622,15 +629,7 @@ footer {
   overflow: hidden;
 }
 
-.about h2.about_header {
-  position: relative;
-  z-index: 1;
-  top: 65px;
-}
 
-.about h2.about_header span {
-  color: #020b17
-}
 
 .about h3 {
   text-transform: uppercase;
@@ -639,12 +638,7 @@ footer {
   font-size: 18px;
 }
 
-.about img {
-  width: 100%;
-  /* margin-top: -5rem; */
-  position: relative;
-  z-index: 0;
-}
+
 
 .contact_me {
   background: #4a00e0;
@@ -927,10 +921,7 @@ footer {
 /* Medium devices (landscape tablets, 390px and up) */
 @media only screen and (min-width: 390px) {
 
-  /* About me mobile fix */
-  .about h2.about_header span {
-    margin-left: 5%;
-  }
+  
 }
 
 
@@ -1007,7 +998,7 @@ footer {
     background-size: cover;
   }
 
-  #portfolio_homepage #global_nav .menu_text {
+  #global_nav .menu_text {
     padding: 5px 15px 5px 0;
     transition: 0.5s ease-out 100ms;
     color: #030b17;
@@ -1027,9 +1018,7 @@ footer {
   }
 
   /* Homepage about section */
-  .about_header {
-    font-size: 32px;
-  }
+  
 
   .about_content {
     display: flex;
@@ -1149,11 +1138,7 @@ footer {
     margin: 15px 0 0 58px;
   }
 
-  /* Homepage about section*/
-  .about h2.about_header span {
-    margin-left: 4%;
-  }
-
+ 
   /* PROJECT HOME INTRO STYLING=======================================================*/
 
   .project_container {
@@ -1197,10 +1182,7 @@ footer {
     font-size: 50px;
   }
 
-  /* Homepage intro section */
-  .about_header {
-    font-size: 40px;
-  }
+  
 
   .intro {
     min-height: 650px;

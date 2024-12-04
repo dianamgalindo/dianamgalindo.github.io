@@ -48,10 +48,10 @@ function globalNav(dir) {
                 <div id="inner_global_nav">
                     <nav>
                         <ul>
-                            <li><a href="${dir}index.html#about_me"><span class="menu-number">01</span> <span class="menu_text">About</span></a></li>
-                            <li><a href="${dir}Projects/portfolio_projects.html"><span class="menu-number">02</span> <span class="menu_text">Projects</span></a></li>
-                            <li><a href="${dir}Lab/portfolio_lab.html"><span class="menu-number">03</span> <span class="menu_text">Lab</span></a></li>
-                           <!-- <li><a href="${dir}"><span class="menu-number">04</span> <span class="menu_text">Contact</span></a></li> -->
+                            <li><a href="${dir}index.html#about_me"><span class="menu-number">01</span> <span class="menu_text">Work</span></a></li>
+                            <li><a href="${dir}Projects/portfolio_projects.html"><span class="menu-number">02</span> <span class="menu_text">Playground</span></a></li>
+                            <li><a href="${dir}Lab/portfolio_lab.html"><span class="menu-number">03</span> <span class="menu_text">About</span></a></li>
+                           <!-- <li><a href="${dir}"><span class="menu-number">04</span> <span class="menu_text">About</span></a></li> -->
                         </ul>
                     </nav>
                 </div>
