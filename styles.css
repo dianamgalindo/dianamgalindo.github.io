@@ -481,12 +481,18 @@ footer {
   background:#ffffff;
   width: 100%;
 }
+.navbar_collapse li {
+  margin: 50px 0;
+}
 
 .navbar_collapse a {
   display: block;
   text-align: center;
   font-size: 20px;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
+}
+#inner_global_nav {
+  margin-top: 30%;
 }
 
 
@@ -937,9 +943,13 @@ footer {
     display: inline-block;
   }
 
+
   .navbar_collapse nav ul {
     display: flex;
     justify-content: end;
+  }
+  .navbar_collapse li {
+    margin:0;
   }
 
   .navbar_collapse {
@@ -964,6 +974,7 @@ footer {
   #global_nav button {
     display: none;
   }
+  #inner_global_nav {margin-top: 5px;}
 
   #portfolio_homepage .navbar_collapse {
    
