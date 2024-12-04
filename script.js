@@ -31,7 +31,8 @@ function addHTMLhead(title, description, dir) {
 function globalNav(dir) {
     let navigation = `
     <nav class="navbar_button margin-bottom">
-            <a class="logo" href="${dir}index.html"><img src="${dir}images/main_logo.png" width="50%" alt="Diana Galindo logo"></a>
+    <div class="desktop_wrapper flexFix">
+     <a class="logo" href="${dir}index.html"><img src="${dir}images/main_logo_black.png" width="40%" alt="Diana Galindo logo"></a>
             <!-- Collapse button -->
             <button type="button" data-toggle="collapse" data-target="#navbarOpenThis" aria-controls="navbarOpenThis"
                 aria-expanded="false" aria-label="Toggle navigation">
@@ -55,7 +56,10 @@ function globalNav(dir) {
                     </nav>
                 </div>
             </div>
-        </nav>    
+    
+    </div>
+           
+    </nav>    
     `;
     document.getElementById('global_nav').innerHTML = navigation;
 }

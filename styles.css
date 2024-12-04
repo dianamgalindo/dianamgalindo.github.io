@@ -425,7 +425,7 @@ button {
 }
 
 #global_nav span.menu-number {
-  color: #93ffd8;
+  color: #4a00e0;
   font-weight: bold;
 }
 
@@ -459,26 +459,31 @@ footer {
 }
 
 
-#portfolio_homepage #inner_global_nav {
-  margin-top: 12%;
-}
 
 .navbar_button {
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; */
+  align-items: center;
+  padding: 20px 5%;
+  background: #ffffff;
+}
+
+.flexFix {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
-  padding: 5% 5% 0 5%;
 }
 
 .navbar_collapse {
   flex-basis: 100%;
   flex-grow: 1;
+  background:#ffffff;
+  width: 100%;
 }
 
 .navbar_collapse a {
   display: block;
-  margin: 0 0 25px 0;
   text-align: center;
   font-size: 20px;
   letter-spacing: 1px;
@@ -510,7 +515,7 @@ footer {
   border-radius: 9px;
   opacity: 1;
   left: 0;
-  background-color:#ffffff;
+  background-color:#040b17;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -526,7 +531,7 @@ footer {
 }
 
 .animated-icon span:nth-child(2) {
-  top: 10px;
+  top: 10.5px;
 }
 
 .animated-icon span:nth-child(3) {
@@ -559,7 +564,29 @@ footer {
   top: 11px;
   width: 0%;
   left: 50%;
+}
 
+#portfolio_homepage #global_nav .menu_text {
+  color: #030b17;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.collapsing {
+  position: absolute;
+  top: 68px;
+  left:0;
+  height: 0;
+  height: -webkit-fill-available;
+  transition-duration: 0ms;
+  transition: 0s;
+}
+
+.show {
+  position: absolute;
+  top: 68px;
+  left:0;
+  height: -webkit-fill-available;
 }
 
 /* Homepage intro section */
@@ -907,12 +934,12 @@ footer {
 
   /* SITEWIDE NAVIGATION MENU   */
   .navbar_collapse {
-    display: block;
+    display: inline-block;
   }
 
   .navbar_collapse nav ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: end;
   }
 
   .navbar_collapse {
@@ -930,7 +957,6 @@ footer {
     color: #ffffff;
     border-radius: 20px;
     padding: 5px 15px 5px 15px;
-
   }
 
 
@@ -940,22 +966,20 @@ footer {
   }
 
   #portfolio_homepage .navbar_collapse {
-    display: block;
-    position: absolute;
-    left: 65%;
-    top: 180px;
-    flex-basis: 100%;
+   
   }
 
   #portfolio_homepage .navbar_collapse ul {
-    display: block;
+    
   }
 
   .navbar_collapse a {
-    font-size: 16px;
+    font-size: 14px;
     text-align: left;
-    margin: 0 0 45px 0;
     display: inline-block;
+  }
+  #inner_global_nav li {
+    margin-right: 40px;
   }
 
 
@@ -973,8 +997,10 @@ footer {
   }
 
   #portfolio_homepage #global_nav .menu_text {
-    padding: 5px 15px;
+    padding: 5px 15px 5px 0;
     transition: 0.5s ease-out 100ms;
+    color: #030b17;
+    font-weight: 600;
   }
 
   #portfolio_homepage #global_nav .menu_number {
@@ -1076,20 +1102,17 @@ footer {
 
   /* Homepage intro section */
   /* .intro-text { margin-top: 10%;}  */
-  .navbar_button {
-    padding: 5% 0 0;
-  }
+ 
   .navbar_collapse a {
-    font-size: 18px;
+    font-size: 14px;
+  }
+  #inner_global_nav {
+    margin-top: 5px;
   }
 
 
   /* .navbar_button.margin-bottom {margin-bottom: 0;}  */
 
-  #portfolio_homepage .navbar_collapse {
-    left: 72%;
-    flex-basis: 100%;
-  }
 
   /* Homepage social media section */
 
@@ -1177,18 +1200,12 @@ footer {
     vertical-align: baseline;
   }
 
-  .navbar_collapse a {
-    margin: 0 0 50px 0;
-  }
+  
 
   .navbar_button {
     margin-bottom: 6%;
   }
 
-  #portfolio_homepage .navbar_collapse {
-    left: 66%;
-    top: 244px;
-  }
 
   /* Homepage about section */
   .about .left_side img {
