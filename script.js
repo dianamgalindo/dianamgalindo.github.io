@@ -68,8 +68,8 @@ function globalNav(dir) {
 // Global HTML footer
 function addFooter(dir) {
     let content = `
-    <p>Copyright © 2023, <i>Diana Galindo</i>. 
-    Designed with <img src="${dir}images/heart_footer.png" width="15px" alt="emoji of a Heart">
+    <p>Copyright © 2024, <i>Diana Galindo</i>. 
+    Designed and coded with <img src="${dir}images/heart_footer.png" width="15px" alt="emoji of a Heart">
     <img src="${dir}images/flag_footer.png" width="15px" alt="emoji of Colombian flag"></p>
     `;
     document.getElementById('globalFooter').innerHTML = content;

@@ -593,6 +593,7 @@ footer {
 
 #global_nav .show {
   position: absolute;
+  z-index: 999;
   top: 68px;
   left:0;
   height: -webkit-fill-available;
@@ -708,12 +709,14 @@ img.divider {
   text-align: center;
   color: #000000;
   background-color: #ffffff;
+  overflow: hidden;
 }
 
 .end_menu span a {
   padding: 0 10px;
   transition: 0.5s ease-out 100ms;
   color: #000000;
+  font-size: 16px;
   overflow: hidden;
 }
 
@@ -730,7 +733,7 @@ img.divider {
 
 footer {
   padding: 25px 0;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 
@@ -960,6 +963,10 @@ footer {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 
+  .margin-bottom {
+    margin-bottom: 5%;
+  }
+
 
   /* SITEWIDE NAVIGATION MENU   */
   .navbar_collapse {
@@ -1012,7 +1019,12 @@ footer {
 
   /* Homepage intro section */
   .intro-text {
-    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .flex-child {
+    flex: 1;
   }
 
   .intro {
@@ -1029,6 +1041,8 @@ footer {
     font-weight: 600;
   }
 
+  #portfolio_homepage .white-rectangle {display: none;}
+
   #portfolio_homepage #global_nav .menu_number {
     padding: 5px 0;
   }
@@ -1042,7 +1056,6 @@ footer {
   }
 
   /* Homepage about section */
-  
 
   .about_content {
     display: flex;
@@ -1119,10 +1132,6 @@ footer {
   .sitewide_menu .navbar_collapse a {
     margin: 0;
   }  
-
-  .content-wrapper {
-    margin: 0 12%;
-  }
 
   /* Homepage intro section */
   /* .intro-text { margin-top: 10%;}  */
@@ -1207,21 +1216,18 @@ footer {
   }
 
   
-
   .intro {
     min-height: 650px;
   }
-  .intro-text {margin: 14% 0 0 0;}
 
+  .intro-text {
+    margin-bottom: 5%;
+  }
+ 
   .intro-text img {
     vertical-align: baseline;
   }
 
-  
-
-  .navbar_button {
-    margin-bottom: 6%;
-  }
 
 
   /* Homepage about section */
@@ -1242,6 +1248,23 @@ footer {
     padding: 0 25px;
   } 
 
+  /* Homepage Projects and filters */
+  .flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .flex-desktop-child {
+    flex: 0.48;
+  }
+
+  #portfolio_projects h2, 
+  #portfolio_projects h3.filter_title {
+    margin-top :0;
+  }
+
+
   /* Footer */
 
   footer {
@@ -1259,10 +1282,6 @@ footer {
 ==========================================================================*/
 
 @media only screen and (min-width: 1400px) {
-
-  .navbar_button {
-    padding: 5% 0;
-  }
 
   .intro-text {
     margin: 8% 0 0 0;
