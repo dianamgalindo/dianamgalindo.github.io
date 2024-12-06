@@ -611,6 +611,9 @@ footer {
 }
 .intro .presentation-img  {
   width: 100%;
+  position: relative;
+  z-index: 1;
+  top: 8px;
 }
 
 .subheader {
@@ -622,13 +625,21 @@ footer {
   vertical-align: bottom;
 }
 
+#portfolio_homepage .white-rectangle {
+  background-color: #ffffff;
+    display: block;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+    top: -3rem;
+    height: 31px;
+}
+
 /* Homepage about section */
 .about {
   background-color: #020b17;
   overflow: hidden;
 }
-
-
 
 .about h3 {
   text-transform: uppercase;
@@ -668,6 +679,7 @@ footer {
 .social_media {
   display: flex;
   justify-content: center;
+  margin-top: 12%;
 }
 
 .social_media a {
@@ -702,6 +714,7 @@ img.divider {
   padding: 0 10px;
   transition: 0.5s ease-out 100ms;
   color: #000000;
+  overflow: hidden;
 }
 
 .end_menu span a:hover {
