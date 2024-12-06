@@ -749,6 +749,7 @@ footer {
 }
 
 #portfolio_projects .btn_filter {
+  opacity: 0.5;
   padding: 10px 30px;
   background: rgb(74, 0, 224);
   background: -moz-linear-gradient(90deg, rgba(74, 0, 224, 1) 0%, rgba(142, 45, 226, 1) 100%);
@@ -763,10 +764,13 @@ footer {
 
 /*This class will be added to the filtered elements*/
 #portfolio_projects .active {
+  opacity: 1;
   transition: 0.5s ease-out 100ms;
-  background: #d9edf7;
-  color: #4a00e0;
-  font-weight: 700;
+  background: rgb(74, 0, 224);
+  background: -moz-linear-gradient(90deg, rgba(74, 0, 224, 1) 0%, rgba(142, 45, 226, 1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(74, 0, 224, 1) 0%, rgba(142, 45, 226, 1) 100%);
+  background: linear-gradient(90deg, rgba(74, 0, 224, 1) 0%, rgba(142, 45, 226, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4a00e0", endColorstr="#8e2de2", GradientType=1);
 }
 
 .filter_container {
@@ -778,6 +782,7 @@ footer {
   border-radius: 10px;
   padding: 20px;
   border: solid 1px #dcdcdc;
+  margin-bottom: 5%;
 }
 
 .filter_by_container h2 {
@@ -787,7 +792,8 @@ footer {
 }
 
 .filter_img {
-  vertical-align: baseline;
+  vertical-align: bottom;
+  margin-right: 5px;
 }
 
 /* Project image containers */

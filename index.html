@@ -67,18 +67,22 @@
                 </p>
             </div>
             <!-- Filter buttons/ example by W3 referenced in the script section-->
-            <h3 class="filter_title content-wrapper desktop_wrapper"><img class="filter_img" src="/images/filter_black_icon.png" width="20px" alt="">Interested in:</h3>
-            <div class="content-wrapper desktop_wrapper filter_by_container margin-bottom margin_fix_desktop">
-                <div id="project_filter">
-                    <button arial-label="All Projects" class="btn_filter active"
-                        onclick="applyfilter('all')">All</button>
-                    <button arial-label="Web design projects" class="btn_filter"
-                        onclick="applyfilter('web')">Web</button>
-                    <button aria-label="Creative Computing projects" class="btn_filter"
-                        onclick="applyfilter('cc')">Creative Computing</button>
+            <div class="content-wrapper desktop_wrapper">
+                <h3 class="filter_title"><img class="filter_img" src="/images/filter_black_icon.png" width="20px" alt="">Interested in:</h3>
+                <div class="filter_by_container margin-bottom margin_fix_desktop">
+                    <div id="project_filter">
+                        <button arial-label="All Projects" class="btn_filter active"
+                            onclick="applyfilter('all')">All</button>
+                        <button arial-label="Web design projects" class="btn_filter"
+                            onclick="applyfilter('web')">Web</button>
+                        <button aria-label="Creative Computing projects" class="btn_filter"
+                            onclick="applyfilter('ux')">UX and UI</button>
+                        <button aria-label="Creative Computing projects" class="btn_filter"
+                            onclick="applyfilter('ml')">Machine Learning</button>    
+                    </div>
                 </div>
             </div>
-    
+           
             <!-- Elements that will be filtered. A single element can belong to multiple categories -->
             <div class="margin-bottom general_background">
                 <div class="filter_container content-wrapper desktop_wrapper">
@@ -94,7 +98,7 @@
                         </a>
                     </div>
                     <!-- Metaverse Project -->
-                    <div class="filter cc project_inactive">
+                    <div class="filter ml project_inactive">
                         <img src="Projects/images/comingSoon_metaverse.png"
                             alt="Project: Metaverse 0.01. Category: Creative Computing. Year: 2022.">
                         <div class="project_headers">
@@ -121,7 +125,7 @@
                         </div>
                     </div>
                     <!-- Superdrug Own Brand web design Project -->
-                    <div class="filter web project_inactive">
+                    <div class="filter ux project_inactive">
                         <img src="Projects/images/comingSoon_sdOwnbrand.png"
                             alt="Project: Superdrug Own Brand Landing Page. Category: Web design. Year: 2019.">
                         <div class="project_headers">
