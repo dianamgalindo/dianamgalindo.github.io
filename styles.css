@@ -685,6 +685,7 @@ footer {
   display: flex;
   justify-content: center;
   margin-top: 12%;
+  padding-bottom: 12%;
 }
 
 .social_media a {
@@ -893,7 +894,7 @@ footer {
 }
 
 .main_project_header span {
-  margin: 12px 10px 5%;
+  margin: 12px 10px 5% 5%;
   display: inline-block;
   text-transform: uppercase;
   font-size: 14px;
@@ -914,8 +915,9 @@ footer {
 .project_keyInfo p {
   text-transform: uppercase;
   letter-spacing: 1px;
+  font-weight: 700;
 }
-.project_keyInfo span, .core_skills p {font-weight: 700;}
+.project_keyInfo span {font-weight: 300;}
 
 .project_keyInfo .skill {
   color: #ffffff;
@@ -1202,8 +1204,13 @@ footer {
   .project_container {
     display: flex;
     justify-content: space-between;
+    padding-top: 7%;
   }
-  .project_keyInfo_container {flex-basis: 40%;}
+  .project_keyInfo_container{
+    flex-basis: 40%;
+    padding:0;
+    
+  }
   .project_description{flex-basis: 60%;}
   .project_description h2 {margin-top: 0;}
   .sub_container {flex-basis: 48%;}
@@ -1295,6 +1302,11 @@ footer {
   footer {
     padding: 50px 0;
     ;
+  }
+
+   /* Projects Page*/
+  .project_container {
+    padding: 5% 0 0 20px;
   }
 
 
