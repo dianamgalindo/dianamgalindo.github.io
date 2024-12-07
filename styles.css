@@ -433,6 +433,10 @@ button {
   background-color: #020b17;
 }
 
+.black {
+  color: #000000; 
+}
+
 footer {
   background: #000000;
   text-align: center;
@@ -892,7 +896,7 @@ footer {
   margin: 12px 10px 5%;
   display: inline-block;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .project_container {
@@ -916,7 +920,7 @@ footer {
 .project_keyInfo .skill {
   color: #ffffff;
   font-size: 15px;
-  font-weight: 100; 
+  font-weight: 300; 
   padding: 8px 15px;
   border: solid 2px #ffffff33;
   -webkit-border-radius: 10px;
@@ -931,6 +935,10 @@ footer {
   margin-bottom: 8%;
   }
 
+.project_description {
+  display: block;
+  overflow: hidden;
+}
 .project_description h2 {font-weight: 700;}  
 
 .project_description span {
@@ -946,6 +954,9 @@ footer {
 
 .project_description span.variant2 {
   background: #5e40f4;
+}
+.project_description span.variant3{
+  background: #7FA3F7;
 }
 
 .project_description .textbg {
