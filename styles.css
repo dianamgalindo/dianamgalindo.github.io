@@ -858,6 +858,10 @@ footer {
 
 /* PROJECT HOME SALON =======================================================*/
 
+#projects .navbar_button{
+  margin-bottom: 0;
+}
+
 .project_hero_image picture {
   display: block;
 }
@@ -891,12 +895,18 @@ footer {
   font-size: 12px;
 }
 
-.main_project_header h1 {
+.project_container {
+  display: block;
+  overflow: hidden;
+}
+#projects h1 {
   margin: 0 30px 0 5%;
   font-weight: 700;
 }
 
-
+.project_keyInfo_container {
+  padding-top: 10%;
+}
 .project_keyInfo p {
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -905,6 +915,7 @@ footer {
 
 .project_keyInfo .skill {
   color: #ffffff;
+  font-size: 15px;
   font-weight: 100; 
   padding: 8px 15px;
   border: solid 2px #ffffff33;
@@ -1158,6 +1169,8 @@ footer {
     width: min-content;
   }
 
+
+
   .social_media a {width:auto;}
 
   .social_media img {
@@ -1174,6 +1187,7 @@ footer {
  
   /* PROJECT HOME INTRO STYLING=======================================================*/
 
+  
   .project_container {
     display: flex;
     justify-content: space-between;
