@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<!-- HTML Header -->
+
+<head>
+  <!-- Load Global JavaScript -->
+  <script src="../script.js"></script>
+  <script>addHTMLhead('Projects', 'Diana Galindo projects', '../');</script>
+
+  <!-- Navigation dropdown necessary scripts-->
+  <script integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <!-- Toggle and animation for the navigation dropdown -->
+  <script>
+    $(document).ready(function () {
+      $('.navbar_button').on('click', function () {
+        $('.animated-icon').toggleClass('open');
+      });
+    });
+  </script>
+</head>
+
+
+<body id="projects" class="sitewide_menu">
+  <main>
+    <section>
+      <!-- Global navigation menu -->
+      <header>
+        <div id="global_nav">&nbsp;</div>
+        <script>globalNav('../')</script>
+      </header>
+
+      <!-- Project Hero image and Title-->
+      <div class="project_hero_image">
+        <div>
+          <picture>
+            <source media="(max-width: 767px)" srcset="images/project-image-header-mob.jpg" />
+            <source media="(min-width: 768px)" srcset="images/project-hero-debris-lore-desktop.png" />
+            <img src="images/project-image-header-mob.jpg"
+              alt="Home Salon project- Isometric illustration of a living room">
+          </picture>
+        </div>
+
+        <div class="desktop_wrapper">
+          <div class="main_project_header general_background">
+            <span>Product Design</span>
+            <h1>Debris Lore</h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project general info and main Objective -->
+      <div class="general_background">
+        <div class="desktop_wrapper content-wrapper project_container">
+          <div class="project_keyInfo project_keyInfo_container margin-bottom">
+            <p>Year: <span>2024</span></p>
+            <p>Type: <span>Digital Service Design</span></p>
+            <div class="core_skills">
+              <p>Core Skills:</p>
+              <span class="skill">Research</span>
+              <span class="skill">Design</span>
+              <span class="skill">Wireframing</span>
+              <span class="skill">Prototyping</span>
+              <span class="skill">Machine Learning</span>
+            </div>
+          </div>
+          <div class="project_description margin-bottom margin_fix_desktop">
+            <div class="objective_header">
+              <h2>Project Overview</h2>
+              <span>&nbsp;</span>
+            </div>
+            <p class="textbg">Debris Lore is a smartphone app that uses machine learning 
+              and computer vision technologies to register and document the quantity and 
+              types of rubbish found on beaches. This app runs an object detection model 
+              using smartphone hardware to assist researchers and volunteers in classifying 
+              different types of waste during beach cleanup campaigns in citizen 
+              science-led projects.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="desktop_wrapper content-wrapper">
+
+        <!-- <img class="divider margin-bottom margin_fix_desktop" src="../images/divider.png" width="10px" alt="">    --><!-- No alt text, this is a decoration img -->
+        <!-- Project description 1 -->
+        <div class="project_description project_container margin-bottom margin_fix_desktop">
+          <div class="sub_container">
+            <div class="objective_header">
+              <h2 class="black">The Problem</h2>
+              <span class="variant3">&nbsp;</span>
+            </div>
+            <p class="black">Despite various government commitments, 53 million metric tonnes 
+              of waste are predicted to enter our aquatic ecosystems by 2030 (Borrelle et al., 2020).
+              Therefore, it is imperative to understand the threats that pollution poses to marine and coastal ecosystems, as well as to our own health. 
+              </p><p class="black">By enhancing the current marine litter monitoring programmes’ methodologies and understanding the value of data collection on waste, Debris 
+              Lore aims to support the efficient and effective collection of this data. This data can later be used to inform policies, legislation, and 
+              the development of sustainability action plans.</p>
+          </div>
+          <div class="sub_container">
+            <img src="images/project-support-img-waste.png" alt="Group of isometric illustrations depicting a living room, a barber shop, a clinic, a tanning shop and 
+              a hairdresser's shop">
+          </div>
+        </div>
+      </div>
+
+      <!-- Project description 2  -->
+      <div class="general_background">
+        <div class="project_description desktop_wrapper content-wrapper">
+          <div class="objective_header">
+            <h2>Research</h2>
+            <span class="variant2 ">&nbsp;</span>
+          </div>
+          <div class="project_container">
+            <p class="sub_container">Main description of the project./ Brief
+              em ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua.
+              Quis ipsum suspendisse ultrices gravida. Raccumsan lacus vel facilisis. </p>
+            <p class="sub_container">Main description of the project./ Brief
+              em ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua.
+              Quis ipsum suspendisse ultrices gravida. Raccumsan lacus vel facilisis.
+            </p>
+          </div>
+          <iframe src="../Diana-Galindo-CV.pdf" width="800" height="500"></iframe>
+          <div class="home_support_images">
+            <img src="images/Health_Clinic.png" alt="Isometric illustration of a clinic named Online Services. There are different patients across the room. One is taking an online consultation. Other patient
+              is over the counter asking for advice while a nurse is offering help to another.">
+            <img src="images/Barber_Shop.png"
+              alt="Isometric illustration of a barber shop. There are different customers in the room, some of them having a haircuit and a face treatment. There is a customer waiting to be served.">
+          </div>
+        </div>
+        
+    <!-- Divider and end of page menu -->
+    <div class="end_menu">
+      <div class="content-wrapper margin-bottom">
+        <img class="divider margin-bottom" src="images/divider-black.png" width="10px" alt="">
+        <span><a href="Projects/portfolio_projects.html">About</a>&#8226</span>
+        <span><a href="Lab/portfolio_lab.html">Playground</a>&#8226</span>
+        <span><a href="#global_nav">Back to top</a></span>
+      </div>
+    </div>
+
+    <!-- Homepage about section (bottom in mobile view, sticky to the left in desktop view) -->
+    <section class="social_media ">
+      <a href="https://git.arts.ac.uk/17518357" target="_blank"><img class="github" src="../images/github-logo.png"
+          alt="Github logo. Go to Diana's profile."></a>
+      <a href="https://www.instagram.com/diana_milenagc/" target="_blank"><img class="instagram"
+          src="../images/instagram.png" alt="Instagram logo. Go to Diana's Instagram profile"></a>
+      <a href="https://www.linkedin.com/in/galindo-diana/" target="_blank"><img class="linkedin"
+          src="../images/linkedin.png" alt="Linkedin logo. Go to Diana's Linkedin profile"></a>
+      <img class="social_deco" src="../images/social_media_deco.png" alt="">
+      <!--No alt text, as it is a decorative img-->
+    </section>
+      </div>
+
+    </section>
+
+
+  </main>
+  <!-- Loading global footer -->
+  <footer id="globalFooter"></footer>
+  <script>addFooter('../');</script>
+
+</body>
+
+</html>
