@@ -990,6 +990,7 @@ footer {
 .interest-areas .interest-left { margin-top: 18px;}
 .interest-areas .interest-right {margin-top: 0;}
 
+
 /* Diana's Breakpoints Viewport
 ========================================================================== 
 ==========================================================================*/
@@ -1018,6 +1019,9 @@ footer {
   /* SITEWIDE NAVIGATION MENU   */
   .navbar_collapse {
     display: inline-block;
+  }
+  .collapse:not(.show) {
+    display: block;
   }
 
 
