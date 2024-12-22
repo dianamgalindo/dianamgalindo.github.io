@@ -841,10 +841,10 @@ footer {
   border-top-right-radius: 10px;
 }
 
-.project_headers h3 {
+/* .project_headers h3 {
   margin: 0 30px 0 10px;
   font-weight: 700;
-}
+} */
 
 .project_headers span {
   margin: 12px 10px 5px;
@@ -949,6 +949,14 @@ footer {
   overflow: hidden;
 }
 .project_description h2 {font-weight: 700;}  
+.project_description h3 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.project_description .divider {
+  width: 100px;
+}
 
 .project_description span {
   width: 100px;
@@ -1172,9 +1180,9 @@ footer {
     letter-spacing: 0.5px;
   }
 
-  .project_headers h3 {
-    font-size: 20px
-  }
+  /* .project_headers h3 {
+    font-size: 16px
+  } */
 
  /* PROJECT HOME SALON STYLING=======================================================*/
   .objective_header {margin-bottom: 4%;} 
@@ -1239,7 +1247,7 @@ footer {
   .project_container {
     display: flex;
     justify-content: space-between;
-    padding-top: 7%;
+    /* padding-top: 7%; */
   }
   .project_keyInfo_container{
     flex-basis: 40%;
@@ -1343,9 +1351,9 @@ footer {
   }
 
    /* Projects Page*/
-  .project_container {
+  /* .project_container {
     padding: 5% 0 0 20px;
-  }
+  } */
 
   /* ABOUT PAGE STYLING=======================================================*/
   .interest-areas{ 
