@@ -853,7 +853,7 @@ footer {
   font-size: 12px;
 }
 
-/* PROJECT HOME SALON =======================================================*/
+/* PROJECT DEBRIS LORE =======================================================*/
 
 #projects .navbar_button{
   margin-bottom: 0;
@@ -870,6 +870,21 @@ footer {
 
 .project_hero_image img {
   width: 100%;
+}
+
+.border-style {
+  border: solid 1px #dddddd;
+  -webkit-box-shadow: 0px 0px 1px 0px #00000040;
+  box-shadow: 0px 0px 1px 0px #00000040;
+  border-radius: 10px;
+  padding: 20px 20px;
+}
+.border-style-users {
+  border: solid 1px #dddddd;
+  -webkit-box-shadow: 0px 0px 1px 0px #00000040;
+  box-shadow: 0px 0px 1px 0px #00000040;
+  border-radius: 10px;
+  padding: 0 0 0 20px;
 }
 
 .main_project_header {
