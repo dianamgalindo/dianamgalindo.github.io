@@ -435,6 +435,10 @@ button {
   background-color: #020b17;
 }
 
+.secondary_background {
+  background-color: #4a00e0;
+}
+
 .black {
   color: #000000; 
 }
@@ -886,7 +890,19 @@ footer {
   border-radius: 10px;
   padding: 0 0 0 20px;
 }
+.ekko-lightbox-nav-overlay a,
+.modal-title,
+.modal-header span {
+  color: #000000 !important;
+}
+.modal-header span {
+  font-size: 30px;
+}
 
+.support-img-style {
+  border-radius: 10px;
+ 
+}
 .main_project_header {
   position: absolute;
   z-index: 1;
@@ -1029,8 +1045,8 @@ footer {
 @media only screen and (min-width: 768px) {
 
   p {
-    line-height: 2;
-    font-size: 14px;
+    line-height: 1.6em;
+    font-size: 16px;
     margin-bottom: 15px;
   }
 
