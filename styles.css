@@ -1061,6 +1061,11 @@ footer {
     margin-bottom: 5%;
   }
 
+  .project_description img.gif-height{
+    width: 83%;
+    margin-left: 10%;
+  }
+
 
   /* SITEWIDE NAVIGATION MENU   */
   .navbar_collapse {
