@@ -435,6 +435,10 @@ button {
   margin-bottom: 12%;
 }
 
+.margin-bottom-internal{
+  margin-bottom: 15px;
+}
+
 #global_nav span.menu-number {
   color: #4a00e0;
   font-weight: bold;
@@ -940,6 +944,8 @@ footer {
   font-weight: 700;
 }
 
+.gif-mob {padding: 0 70px;}
+
 .project_keyInfo_container {
   padding-top: 10%;
 }
@@ -1059,8 +1065,10 @@ footer {
   }
 
   .margin-bottom {
-    margin-bottom: 5%;
+    margin-bottom: 6%;
   }
+
+  .gif-mob {padding: unset;}
 
   .project_description img.gif-height{
     width: 83%;
@@ -1181,9 +1189,6 @@ footer {
 
   /* PROJECTS PAGE STYLING =======================================================*/
 
-  .margin_fix_desktop {
-    margin-bottom: 5%;
-  }
 
   .filter_container {
     display: flex;
