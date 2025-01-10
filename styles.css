@@ -442,6 +442,7 @@ button {
   margin-bottom: 12%;
 }
 
+
 .margin-bottom-internal{
   margin-bottom: 15px;
 }
@@ -675,27 +676,30 @@ footer {
 
 .general-active-cta {
   background: #4a00e0;
-  border-radius: 4px;
+  border-radius: .5em;
   padding: 20px 35px;
   margin-right: 1%;
+  border: solid 2px #4a00e0;
   transition: 0.5s ease-out 100ms;
+  font-weight: 600;
+  letter-spacing: 0.3px;
 }
 
 .general-inactive-cta {
   outline: solid 2px #4a00e0;
   outline-offset: -2px;
-  border-radius: 4px;
+  border-radius: .5em;
   color: #4a00e0;
-  font-weight: 700;
+  font-weight: 600;
   padding: 20px 35px;
   transition: 0.5s ease-out 100ms;
 }
 
 .general-active-cta:hover, .general-inactive-cta:hover {
-  background: #d9edf7;
+  background: #f4f3ff;
   color: #4a00e0;
-  font-weight: 700;
-  
+  border: solid 2px #4a00e0;
+  font-weight: 600;
 }
 
 /* Homepage social media section */
@@ -980,6 +984,13 @@ footer {
   margin: 0 0 6px 0;
   display: inline-block;
 }
+.project_keyInfo p.text-award {
+  text-transform: unset;
+  font-weight: 300;
+  font-size: 14px; letter-spacing: normal;
+}
+.award { width: 25px;}
+.award-ext {width: 125px;}
 
 .objective_header{
   position: relative;
@@ -1028,6 +1039,8 @@ footer {
 }
 
 .project_description img {width: 100%;}
+
+
 
 /* ABOUT PAGE =======================================================*/
 #about_page h1,
@@ -1079,6 +1092,9 @@ footer {
 
   .margin-bottom {
     margin-bottom: 6%;
+  }
+  .margin-top{
+    margin-top: 6%;
   }
 
   .gif-mob {padding: unset;}
@@ -1303,7 +1319,7 @@ footer {
     padding: 6% 0 0 18px;
     
   }
-  .project_description{flex-basis: 60%; margin-top: 6%;}
+  .project_description{flex-basis: 56%; }
   .project_description h2 {margin-top: 0;}
   .sub_container {flex-basis: 48%;}
 
