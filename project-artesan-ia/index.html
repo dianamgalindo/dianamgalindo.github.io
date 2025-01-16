@@ -425,7 +425,7 @@
                 regions in which Colombia
                 is geographically divided. The main objective of selecting these specific patterns was to show the
                 multiculturality of the country,
-                as well as its richness in natural sources. It is important to understand that the areas that artisans
+                as well as its richness in natural sources. Additionally, it is important to understand that the areas that artisans
                 inhabit inform their use of materials,
                 techniques, colours, and ultimately the artefact’s patterns.</p>
             </div>
@@ -451,26 +451,26 @@
               </a>
             </div>
             <div class="sub_container">
-              <p>The design of the cards was influenced by the
-                dimensionality of the box, as well
-                as the field of view of the camera. In the initial stage, I sketched some quick patterns and ran a
-                Processing sketch that reduced the camera input to 100 pixels.</p>
-              <p>The design of the cards was influenced by the
-                dimensionality of the box, as well
-                as the field of view of the camera. In the initial stage, I sketched some quick patterns and ran a
-                Processing sketch that reduced the camera input to 100 pixels.</p>
+              <p>The purpose of the patterns is to enable the interaction between the user and the Processing sketch (screen animation).
+                 For the butterflies to react to the pattern I used Wekinator, an open-source tool compatible with
+                  Processing that allows the training of neural networks for image recognition.</p>
+              <p>Using this software, I mapped each pattern to a specific area in the map. This means that when the camera identifies 
+                certain colours and configurations in the image, the butterflies will move to the section assigned to that specific 
+                pattern. To test this principle, I sketched some quick patterns and ran a Processing sketch that reduced the camera 
+                input to 100 pixels. Reducing the number of pixels the camera needs to analyse helped the efficiency of the model's training.</p>
               <a class="general-active-cta" target=”_blank”
-                href="https://www.youtube.com/watch?v=raqJ6kdJ5ss&t=40s">View model training</a>
+                href="https://www.youtube.com/watch?v=raqJ6kdJ5ss&t=40s">Model training demo</a>
             </div>
 
           </div>
 
         </div>
         <h3>Cards</h3>
-        <p>Finally, I would like to mention that the selection of these patterns was intrinsically related to the
-          design of the map in the Processing Sketch.
-          The map was an informed process of selection, based on the amount of available resources that covered
-          relevant information on the maker community and the patterns themselves</p>
+        <p>After mapping the patterns with their corresponding geographical area in the map of Colombia, I refined the design of the cards. 
+          The pattern would cover most of the space since the camera needs to interpret the image and trigger the interaction. At the top, 
+          I added the name of the Artisan artefact, then I added information about the Region and location in which the artefacts are usually 
+          made and the name of the main community maker. When the card is inserted in the box, the user can still see the name of the artisan artefact, 
+          but the pattern will trigger a location change in the map, and show more information about the artefact.</p>
         <div class="row justify-content-center margin-bottom ">
           <div class="row">
             <a href="images/project-support-img-cards-outcome.png" data-toggle="lightbox" data-gallery="example-gallery"
