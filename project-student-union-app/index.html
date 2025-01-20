@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<!-- HTML Header -->
+
+<head>
+  <!-- Load Global JavaScript -->
+  <script src="../script.js"></script>
+  <script>addHTMLhead('Projects', 'Diana Galindo projects', '../');</script>
+
+  <!-- Navigation dropdown necessary scripts-->
+  <script integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"
+    integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+    integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Toggle and animation for the navigation dropdown -->
+  <script>
+    $(document).ready(function () {
+      $('.navbar_button').on('click', function () {
+        $('.animated-icon').toggleClass('open');
+      });
+    });
+  </script>
+</head>
+
+
+<body id="projects" class="sitewide_menu">
+  <main>
+    <section>
+      <!-- Global navigation menu -->
+      <header>
+        <div id="global_nav">&nbsp;</div>
+        <script>globalNav('../')</script>
+      </header>
+
+      <!-- Project Hero image and Title-->
+      <div class="project_hero_image">
+        <div>
+          <picture>
+            <source media="(max-width: 767px)" srcset="images/project-hero-student-union-app-mob.png" />
+            <source media="(min-width: 768px)" srcset="images/project-hero-student-union-app-desktop.png" />
+            <img src="images/project-hero-student-union-app-mob.png"
+              alt="Artesan.IA - image of a AI generated artisan basket">
+          </picture>
+        </div>
+
+        <div class="desktop_wrapper">
+          <div class="main_project_header general_background">
+            <h1 class="white-text">Arts Student Union</h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project general info and main Objective -->
+      <div class="general_background">
+        <div class="desktop_wrapper content-wrapper project_container margin-bottom">
+          <div class="project_keyInfo project_keyInfo_container margin-bottom">
+            <p>Year: <span>2023</span></p>
+            <p>Type: <span>App Design</span></p>
+            <div class="core_skills margin-bottom-internal">
+              <p>Core Skills:</p>
+              <span class="skill">UX design</span>
+              <span class="skill">UI design</span>
+              <span class="skill">SwiftUI</span>
+              <span class="skill">Figma</span>
+              <span class="skill">User research</span>
+              <span class="skill">Wireframing</span>
+            </div>
+          </div>
+
+          <!-- Project's Objective ------- -->
+          <div class="project_description margin-bottom margin-top">
+            <div class="objective_header">
+              <h2 class="white-text">Project Overview</h2>
+              <span>&nbsp;</span>
+            </div>
+            <p class="textbg white-text">The following project explores the development of a mobile app for the Arts Student Union.
+               Starting from the concept of ‘community as sentiment’ (Simpson, 1937) rather than merely ‘locality’ (Clark, 1973),
+               the application brings together a community that can live online and offline. The application pretends to meet the 
+               innate human need for belonging and significance, allowing students to connect with each other through communities 
+               where they share interests. <br>
+               This app caters to two main users: The student who wants to be part of a community (either a society or sports club), 
+               and the student committee member, who is responsible for running a community within the Student Union.
+            </p>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Description of Project's Problem ------- -->
+      <div class="desktop_wrapper content-wrapper margin-bottom">
+        <div class="project_description">
+          <div class="objective_header">
+            <h2>The Problem</h2>
+            <span class="variant3">&nbsp;</span>
+          </div>
+          <div class="project_container">
+            <div class="sub_container">
+              <p>During the process of creating the Computer Science Society at the University of Arts London, our committee realised
+                 how broad and disjointed the sports clubs and Societies felt in the online realm. Every society seemed to have its own 
+                 Instagram account, and other communication channels, while the process of managing a society felt daunting, with different 
+                 forms that needed to be completed and sent over email, such as budget Excel documents, health and safety word documents, 
+                 training sessions, etc. 
+              </p>
+              <p>Therefore, the aim of creating the Student Union app is to house all these different areas under a unified platform, 
+                allowing the creation and management of societies, as well as facilitating communication with members. This app is 
+                therefore built as a platform where UAl students can find out all about the communities they can be part of, create 
+                and manage their own, and speed up communication and procedures with the Student Union.</p>
+            </div>
+            <div class="sub_container">
+              <a href="images/project-support-img-project-elements.png" data-toggle="lightbox">
+                <img src="images/project-support-img-project-elements.png"
+                  alt="A set of cards with imprinted patterns next to a box where the cards are inserted. In the background there's an illustration of the map of Colombia" 
+                  class="support-img-style  img-fluid">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- --------Divider--------- -->
+      <img class="divider margin-bottom" src="../images/divider-black.png" width="10px" alt="">
+      <!-- no alt text required since its a decorative element -->
+
+      <!-- Research Process ------- -->
+      <div class="margin-bottom">
+        <div class="project_description desktop_wrapper content-wrapper">
+          <div class="header_container">
+            <div class="objective_header">
+              <h2>Research</h2>
+              <span class="variant3">&nbsp;</span>
+            </div>
+          </div>
+
+          <div class="project_container margin-bottom-internal">
+
+            <div class="sub_container">
+              <p>Artesan-ia has been inspired by different Interactive projects that seek to fuse
+                cultural heritage knowledge with technology as a medium to explore concepts such as
+                meaning, co-creation, and misrepresentation. In an attempt to dismantle the perception
+                of apparent friction between what is ‘traditional’ and ‘technological’, Ars Electronica
+                ran the Electronic Indigenous Art project in 2018. This project brought together indigenous
+                and non-indigenous people to produce interactive creative work.</p>
+              <p>One of the outcomes, ‘The Earth that is Us’ (Electronica, 2019), is a project that plays
+                with the patterns and meaning of body painting for the Brazilian Karapotó Plak-ô Indigenous
+                community. For this project, the community would first draw the patterns that would later
+                be projected onto their bodies, and on those of the audience.
+              </p>
+            </div>
+            <div class="sub_container">
+              <a href="images/project-support-img-research-1.png" data-toggle="lightbox">
+                <img src="images/project-support-img-research-1.png"
+                  alt="Digital projection of an ancestral pattern onto the body of a man, symbolizing indigenous knowledge in combination with technology." class="support-img-style  img-fluid">
+              </a>
+            </div>
+
+          </div>
+          <div class="project_container margin-bottom-internal">
+            <div class="sub_container">
+              <h3>Knots of Code</h3>
+              <a href="images/project-support-img-paola_Torres.png" data-toggle="lightbox">
+                <img src="images/project-support-img-paola_Torres.png"
+                  alt="Paola Torres explaining with images the work she has done on the use of image recognition to identify Quipu knots." class="support-img-style img-fluid">
+              </a>
+            </div>
+            <div class="sub_container margin-top">
+              <p>As another example, Paola Torres Núñez is a Peruvian transdisciplinary practitioner who
+                explores the use of technology with ancestral knowledge (João Gabriel Ribeiro & Ribeiro, 2022).
+                In her work Knots of Code, Paola explores the Quipu (a system of knotted tally cords used by the
+                Inca Civilization to encode information) through computer vision. This work aimed to use technology
+                to decode the possible meaning of the system by looking at the amount of knots, and the distance
+                between them. However, it also meant an understanding of how the Incas used the system, which also
+                implies the use of AI for archaeological research (Torres, 2020).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- --------Divider--------- -->
+      <img class="divider margin-bottom" src="../images/divider-black.png" width="10px" alt="">
+
+      <!-- Project - Development process  -->
+      <div class="project_description desktop_wrapper content-wrapper margin-bottom">
+        <div class="objective_header">
+          <h2>Development</h2>
+          <span class="variant3">&nbsp;</span>
+        </div>
+        <!-- Sketching - SECTION -->
+        <div class="project_container">
+          <div class="sub_container">
+            <p>As mentioned, ‘Artesan-ia’ was inspired by projects that fostered interactions in combination
+              with the exploration and learning of cultural heritage content. The generated interaction involves
+              a user, an input, and an output; and was very much influenced by the Yoto mini box, a product designed
+              to play stories when a card is placed in the box. Each card triggers a story that is read out loud
+              and which can be easily switched if the card is changed.</p>
+            <p>Following this principle, I sketched an interaction that initially aimed to communicate the real
+              meaning of a pattern, v.s the distorted notions they have acquired. To achieve this, I had sketched
+              two different boxes, one ‘transparent box’ that would tell me the real meaning of a pattern v.s an
+              ‘opaque box’ that would tell me the distorted notion of the pattern. However, the interaction was
+              simplified into a single box that receives input from a card (the pattern) and outputs expanded
+              information about that card. The development of this project is divided into the design of
+              the box, the design of the Processing sketch and the cards, and finally the design of the interaction
+              (all elements working together).</p>
+          </div>
+          <div class="sub_container">
+            <a href="images/project-support-img-interaction-sketch.png" data-toggle="lightbox"
+              data-title="Interaction Sketch">
+              <img src="images/project-support-img-interaction-sketch.png"
+                alt="Initial sketch of the intended interaction. Next to the sketch there's a Yoto box, which inspired the workflow of this project."
+                class="img-fluid margin-bottom">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- --------Divider--------- -->
+      <img class="divider margin-bottom" src="../images/divider-black.png" width="10px" alt="">
+
+      <!-- Development - SECTION -->
+      <div class="project_description desktop_wrapper content-wrapper">
+        <!--Development of prototypes - SECTION -->
+        <div>
+          <div class="margin-bottom-internal">
+            <h3>The box</h3>
+            <p>As a result of reading about Artificial Intelligence and the ethical considerations behind it,
+              I stumbled upon the concept of the Black Box models. These models are created from data, with
+              minimum input from humans, and often produce results that are complex to explain and are often opaque
+              (Rudin
+              & Radin, 2019).
+              However, I found it more relevant to focus on the counterpart of these obscure models, that is,
+              Interpretable models.
+              In the overall interactive experience, the box is the part that receives the pattern from the user and
+              produces an output. The way I chose to represent an interpretable model is by literally building a box
+              from
+              which all the training of my model is happening. All the elements that go inside it (the camera and the
+              cards with patterns) are visible to everyone.</p>
+          </div>
+          <div>
+            <div class="margin-bottom-internal">
+              <h3>First Iteration</h3>
+              <p>The purpose of the flowchart is to understand the overall user journey and guide the code
+                structure of the app.
+                By identifying main screens and interactions, I was able to start thinking programmatically and roughly
+                understand the components
+                and the file structure that make up the app. This flow chart came in handy when I needed to create the
+                routing of the app and the
+                different navigations during the code development.</p>
+              <div class="project_container">
+                <div class="sub_container margin-bottom-internal">
+                  <a href="images/project-support-img-first-iteration-box.png" data-toggle="lightbox"
+                    >
+                    <img src="images/project-support-img-first-iteration-box.png"
+                      alt="Box prototypes made of cardboard. These boxes describe a cube shape."
+                      class="img-fluid border-style">
+                  </a>
+                </div>
+                <div class="sub_container margin-bottom-internal">
+                  <a href="images/project-support-img-first-iteration-rounded-box.png" data-toggle="lightbox"
+                    >
+                    <img src="images/project-support-img-first-iteration-rounded-box.png"
+                      alt="Box prototypes made of cardboard. These boxes describe a cube shape with rounded edges."
+                      class="img-fluid border-style">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="margin-bottom">
+              <h3>Second Iteration</h3>
+              <p>In the second iteration, I decided to add a pattern to the box. This design choice was initially
+                aimed to help light come through the box, and therefore support the detection of the patterns by
+                the camera. Later, it also became an analogy for the artisan artefacts I was researching.</p>
+              <div class="project_container">
+                <div class="sub_container">
+                  <a href="images/project-support-img-second-iteration-box.png" data-toggle="lightbox"
+                    >
+                    <img src="images/project-support-img-second-iteration-box.png"
+                      alt="Second prototype of the box, with an added pattern on each side. This pattern allows the light to come through the box."
+                      class="img-fluid margin-bottom-internal border-style">
+                  </a>
+                </div>
+                <div class="sub_container">
+                  <a href="images/project-support-img-final-box.png" data-toggle="lightbox">
+                    <img src="images/project-support-img-final-box.png"
+                      alt="Final outcome of the box. A webcam can be seen placed inside the box."
+                      class="img-fluid margin-bottom-internal border-style">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- --------Divider--------- -->
+        <img class="divider margin-bottom" src="../images/divider-black.png" width="10px" alt="">
+
+        <!-- Development - SECTION -->
+         <div class="margin-bottom-internal">
+          <h3>Processing Sketch Design</h3>
+          <p>Colombia is a multicultural country with more than 100 indigenous ethnic groups and about 65 different
+            spoken native languages. Its geographical richness has allowed the country to be geographically divided
+            into 6 distinct natural regions, each with its very distinctive climate, fauna and flora, customs, and
+            people
+            (Convention on Biological Diversity, 2015). </p>
+          <div class="project_container">
+            <div class="sub_container">
+  
+              <p>The Processing sketch intends to communicate the richness of the
+                country and its makers. Based on the 5 mainland regions in which Colombia is divided, I identified and
+                mapped
+                the main artisan makers for each region and selected the ones that were better supported by veridic
+                information.
+                These communities were found through a collection of resources, such as books (Villegas & Jiménez, 2000)
+                and online
+                government archives (Artesanías de Colombia SIART, 2014).</p>
+            </div>
+            <div class="sub_container">
+              <a href="images/project-support-img-sketch-mind-map.png" data-toggle="lightbox" data-title="List of artisan artifacts per region.">
+                <img src="images/project-support-img-sketch-mind-map.png"
+                  alt="Map of the Colombian Regions, listing different communities and artisan artefacts for each."
+                  class="img-fluid margin-bottom">
+              </a>
+            </div>
+          </div>
+         </div>
+
+        <!-- Development - SECTION -->
+        <div class="margin-bottom-internal">
+          <h3>Mapping the communities</h3>
+          <p>After selecting the maker communities I organised them into a chart, and then located them in the Colombian
+            map. For each region,
+            I chose representative fauna and flora, buildings, or industries, and kept the geographical division clear
+            through the variation of
+            colous and clear division lines.</p>
+          <div class="row justify-content-center">
+            <div class="row">
+              <a href="images/project-support-img-map_variation_1.png" data-toggle="lightbox"
+                data-gallery="example-gallery" class="col-sm-4">
+                <img src="images/project-support-img-map_variation_1.png" class="img-fluid support-img-style"
+                  alt="Map of Colombia - variation 1 - dark green background.">
+              </a>
+              <a href="images/project-support-map_variation_2.png" data-toggle="lightbox" data-gallery="example-gallery"
+                class="col-sm-4">
+                <img src="images/project-support-map_variation_2.png" class="img-fluid support-img-style"
+                  alt="Map of Colombia - variation 2 - mild green background.">
+              </a>
+              <a href="images/project-support-map_variation_3.png" data-toggle="lightbox" data-gallery="example-gallery"
+                class="col-sm-4">
+                <img src="images/project-support-map_variation_3.png" class="img-fluid support-img-style"
+                  alt="Map of Colombia - variation 3 - light green background.">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Development - SECTION -->
+        <div>
+          <h3>Interactive elements</h3>
+          <div class="project_container margin-bottom-internal">
+            <div class="sub_container">
+              <p>The interaction of the Processing sketch relies on the X and Y positioning of an element
+                reaching specific areas of the sketch. When the camera reads a pattern, an element will move
+                to a specific X and Y position within the map, and trigger the opening of a new window. </p>
+              <p>To achieve this, I created specific sections within the sketch that covered a range (red squares on the
+                map).
+                The elements that trigger the pop-up windows when entering a given range are the yellow butterflies,
+                which move
+                across the map according to the pattern the user enters in the box. I used yellow butterflies mainly
+                because it
+                is an important reference to Colombian writer Gabriel Garcia Marquez's magic realism and his book “One
+                Hundred
+                Years of Solitude”.</p>
+              <a class="general-active-cta margin-bottom-internal" target=”_blank” href="https://youtu.be/2mcrVWiNbno">Map states demo</a>
+            </div>
+            <a href="images/project-support-img-butterfly-sprite.png" data-toggle="lightbox"
+              data-gallery="example-gallery" class="sub_container ">
+              <img src="images/project-support-img-butterfly-sprite.png" class="img-fluid  support-img-style"
+                alt="Sample of the code used to create ranges within the map. Two colour variations of butterflies sprites can be seen at the bottom.">
+            </a>
+          </div>
+
+          <!-- Development - SECTION -->
+          <div class="margin-bottom">
+            <p>When the butterflies reach a specific position, they seamlessly initiate the opening of an overlay
+              window
+              within the sketch.
+              This window not only provides additional information about the introduced pattern in the box but also
+              encourages the reader to
+              contemplate the role of AI by showcasing AI-generated objects. Below, you'll find three examples of
+              these
+              overlay windows in
+              action which talk about the Amazon, Andean, and Pacific regions.</p>
+            <div class="row justify-content-center">
+              <div class="row">
+                <a href="images/project-support-img-pop-up-card-cesteria.png" data-toggle="lightbox"
+                  data-gallery="example-gallery" class="col-sm-4">
+                  <img src="images/project-support-img-pop-up-card-cesteria.png" class="img-fluid support-img-style"
+                    alt="Popup window example describing in detail the 'Cesteria Balay' from the Amazon region.">
+                </a>
+                <a href="images/project-support-img-pop-up-card-cesteria-en-rollo.png" data-toggle="lightbox"
+                  data-gallery="example-gallery" class="col-sm-4">
+                  <img src="images/project-support-img-pop-up-card-cesteria-en-rollo.png"
+                    class="img-fluid support-img-style"
+                    alt="Popup window example describing in detail the 'Cesteria en rollo' from the Andean region.">
+                </a>
+                <a href="images/project-support-img-pop-up-card-las-molas.png" data-toggle="lightbox"
+                  data-gallery="example-gallery" class="col-sm-4">
+                  <img src="images/project-support-img-pop-up-card-las-molas.png" class="img-fluid support-img-style"
+                    alt="Popup window example describing in detail the 'Cesteria en rollo' from the Pacific region.">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- --------Divider--------- -->
+        <img class="divider margin-bottom" src="../images/divider-black.png" width="10px" alt="">
+
+        <!-- Development of the cards - SECTION -->
+        <div class="margin-bottom-internal">
+          <h3>The Pattern Cards</h3>
+          <div class="project_container">
+            <div class="sub_container">
+              <p>As part of the interaction, I designed 5 different cards displaying patterns that covered the 5
+                different
+                regions in which Colombia
+                is geographically divided. The main objective of selecting these specific patterns was to show the
+                multiculturality of the country,
+                as well as its richness in natural resources. Additionally, it is important to understand that the areas
+                that artisans
+                inhabit inform their use of materials,
+                techniques, colours, and ultimately the artefact’s patterns.</p>
+            </div>
+            <div class="sub_container">
+              <a href="images/project-support-img-chosen-communities.png" data-toggle="lightbox"
+                data-gallery="example-gallery">
+                <img src="images/project-support-img-chosen-communities.png" class="img-fluid support-img-style margin-bottom"
+                  alt="Chart of the selected artisan artefact (and patterns) that will represent each region in the Colombian map.">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Development - SECTION -->
+        <div class="margin-bottom-internal">
+          <h3>Decoding the Pattern</h3>
+          <div class="project_container margin-bottom">
+            <div class="sub_container">
+              <a href="images/project-support-img-model-iteration.png" data-toggle="lightbox"
+                data-gallery="example-gallery">
+                <img src="images/project-support-img-model-iteration.png" class="img-fluid support-img-style margin-bottom-internal"
+                  alt="Visual description on how the patterns are analysed by the webcam, and then used to train a Wekinator machine learning model.">
+              </a>
+            </div>
+            <div class="sub_container">
+              <p>The purpose of the cards with patterns is to enable the interaction between the user and the Processing
+                sketch.
+                The interaction between the butterflies and the cards is managed through Wekinator, an open-source tool
+                compatible with
+                Processing that allows the training of neural networks for image recognition.</p>
+              <p>Using this software, I mapped each pattern to a specific area in the map. This means that when the
+                camera
+                identifies certain colours and configurations in the image, the butterflies will move to the section
+                assigned
+                to that specific pattern. To test this principle, I sketched some quick patterns and ran a Processing
+                sketch
+                that reduced the camera input to 100 pixels. Reducing the number of pixels the camera needs to analyse
+                helped
+                the model training to be faster.</p>
+              <a class="general-active-cta" target=”_blank”
+                href="https://www.youtube.com/watch?v=raqJ6kdJ5ss&t=40s">Model training demo</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Development - SECTION -->
+        <div class="margin-bottom">
+          <h3>Cards</h3>
+          <p>After mapping the patterns with their corresponding geographical area in the map of Colombia, I refined the
+            design of the cards.
+            The pattern would cover most of the space since the camera needs to interpret the image and trigger the
+            interaction. At the top of the card,
+            I added the name of the Artisan artefact, then I added information about the Region and location in which the
+            artefacts are usually
+            made and the name of the main community maker. When the card is inserted in the box, the user can still see
+            the name of the artisan artefact,
+            but the pattern will trigger a location change in the map, and show more information about the artefact.</p>
+          <div class="row justify-content-center margin-bottom ">
+            <div class="row">
+              <a href="images/project-support-img-cards-outcome.png" data-toggle="lightbox" data-gallery="example-gallery"
+                class="col-sm-6">
+                <img src="images/project-support-img-cards-outcome.png" class="img-fluid support-img-style margin-bottom-internal"
+                  alt="Set of cards with patterns representing 5 different artisan artefacts.">
+              </a>
+              <a href="images/project-support-img-cards-outcome-2.png" data-toggle="lightbox"
+                data-gallery="example-gallery" class="col-sm-6">
+                <img src="images/project-support-img-cards-outcome-2.png" class="img-fluid support-img-style"
+                  alt="Final prototype of the box and the cards. One of the cards is inserted in the box.">
+              </a>
+            </div>
+          </div>
+        </div>
+        
+
+        <!-- --------Divider--------- -->
+        <img class="divider margin-bottom" src="../images/divider-black.png" width="10px" alt="">
+
+        <!-- Project's Outcome -->
+        <div class="margin-bottom">
+          <div class="objective_header">
+            <h2>Outcome</h2>
+            <span class="variant3">&nbsp;</span>
+          </div>
+          <div>
+            <div class="margin-bottom-internal">
+              <p>The project outcome is 'Artesan.ia', an Interaction that brings together encoding of meaning and
+                computer vision to promote awareness and interest in artisan artefacts. The 'medium is the message'
+                (McLuhan, 1995) and in this project, the medium is the computer vision model. It is the making of the
+                model
+                and its constraints that have informed the making of the project. The three stages of the process for
+                this interaction are:</p>
+              <ul>
+                <li><strong>1. Input:</strong> a card enters the box. </li>
+                <li><strong>2. Training interface:</strong> the camera reads the image, and through Wekinator, a
+                  position is mapped to
+                  match the pattern with its
+                  corresponding location. Then the model is trained to match different patterns to different locations.
+                </li>
+                <li><strong>3. Output: </strong>the Processing sketch reacts to the card inserted, primarily by changing
+                  the position of
+                  the butterflies in the map and opening information popups along the way.</li>
+              </ul>
+            </div>
+            <div class="project_container">
+              <div class="sub_container">
+                <iframe class="support-img-style margin-bottom-internal" width="100%" height="315"
+                  src="https://www.youtube.com/embed/VeSLYXZ9dDo" title="Artesan.ia Processing Sketch" frameborder="0"
+                  allow="accelerometer; autoplay; 
+                clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="sub_container">
+                <iframe class="support-img-style" width="100%" height="315"
+                  src="https://www.youtube.com/embed/8d0BqK0_0yU?si=bkNn3cjq62mPRqyF" title="YouTube video player"
+                  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- --------Divider--------- -->
+        <img class="divider margin-bottom" src="../images/divider-black.png" width="10px" alt="">
+
+        <!-- Project's Reflection-->
+         <div class="margin-bottom">
+          <div class="objective_header">
+            <h2>Reflection</h2>
+            <span class="variant3">&nbsp;</span>
+          </div>
+          <p>This project took me to different places. Starting with the encoding of meaning it turned into an
+            understanding of
+            the inside workings of Artificial Intelligence models. The role of machine learning is to process information,
+            in this case,
+            this information has cultural meaning to us, but in reality, the model can’t acknowledge its historical
+            importance.
+            We consciously grant meaning to that information and data.</p>
+          <p>Finally, this project also attempts to inform people and create an interactive experience. If further
+            developed, this project could be improved,
+            starting with the actual training of the computer vision model. It could be enhanced to capture better details
+            of the patterns and ‘resist’ changes in light.
+            The flow between the elements could also be improved, with changes in the box's architecture, and the
+            different screens' coding.</p>
+         </div>
+       
+
+        <!-- Project's Bibliography-->
+        <div class="objective_header">
+          <h2>Bibliography</h2>
+          <span class="variant3">&nbsp;</span>
+        </div>
+        <ul class="internal-list">
+          <li>Artesanías de Colombia SIART, – Sistema de Snformación para la Artesanía
+            (2014) Artesanias de Colombia, Artesanias de Colombia – Artesanías de Colombia.
+            Available at: https://artesaniasdecolombia.com.co/PortalAC/General/template_index.jsf
+            (Accessed: 21 December 2023).</li>
+          <li>Convention on Biological Diversity (2015) Colombia – Main Details, Convention on Biological
+            Diversity. Available at: https://www.cbd.int/countries/profile/?country=co (Accessed: 20
+            December 2023)</li>
+          <li>Electronica, A. (2019) The earth that is us, Out of the Box. Available at: https://ars.
+            electronica.art/outofthebox/en/theearththatisus/ (Accessed: 18 January 2024).</li>
+          <li>João Gabriel Ribeiro, R.P. and Ribeiro, J.G. (2022) Paola del Prado USA ia para mapear
+            possibilidades Além Do Eurocentrismo, Shifter. Available at: https://shifter.pt/2022/07/
+            paola-del-prado-artista-ia-human-entities/ (Accessed: 18 January 2024).</li>
+          <li>McLuhan, M. (1995) ‘The medium is the message’, in Understanding media: The extensions
+            of man. MIT-Press: Cambridge, Mass., pp. 1–18.</li>
+          <li>Rudin, C. and Radin, J. (2019) Why are we using black box models in AI when we don’t
+            need to? A lesson from an explainable AI competition, Harvard Data Science Review.
+            Available at: https://hdsr.mitpress.mit.edu/pub/f9kuryi8/release/8 (Accessed: 01
+            January 2024).</li>
+          <li>Torres, P. (2020) Knots of code, Knots of Code. Available at: https://khipucamayoc.github.
+            io/ (Accessed: 18 January 2024).</li>
+        </ul>
+      </div>
+
+      <!-- Divider and end of page menu -->
+      <div class="end_menu">
+        <div class="content-wrapper margin-bottom">
+          <img class="divider margin-bottom" src="images/divider-black.png" width="10px" alt="">
+          <span><a href="../About/index.html">About</a>&#8226</span>
+          <!-- <span><a href="Lab/portfolio_lab.html">Playground</a>&#8226</span> -->
+          <span><a href="#global_nav">Back to top</a></span>
+        </div>
+      </div>
+
+      <!-- Homepage about section (bottom in mobile view, sticky to the left in desktop view) -->
+      <section class="social_media ">
+        <a href="https://github.com/DianaMGalindo" target="_blank"><img class="github" src="../images/github-logo.png"
+            alt="Github logo. Go to Diana's profile."></a>
+        <a href="https://www.instagram.com/diana_milenagc/" target="_blank"><img class="instagram"
+            src="../images/instagram.png" alt="Instagram logo. Go to Diana's Instagram profile"></a>
+        <a href="https://www.linkedin.com/in/galindo-diana/" target="_blank"><img class="linkedin"
+            src="../images/linkedin.png" alt="Linkedin logo. Go to Diana's Linkedin profile"></a>
+        <img class="social_deco" src="../images/social_media_deco.png" alt="">
+        <!--No alt text, as it is a decorative img-->
+      </section>
+      </div>
+
+    </section>
+
+  </main>
+  <script>
+    $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+      event.preventDefault();
+      $(this).ekkoLightbox();
+    });
+  </script>
+  <!-- Loading global footer -->
+  <footer id="globalFooter"></footer>
+  <script>addFooter('../');</script>
+
+</body>
+
+</html>
