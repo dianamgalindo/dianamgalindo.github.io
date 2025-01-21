@@ -1070,6 +1070,16 @@ footer {
 .interest-areas .interest-left { margin-top: 18px;}
 .interest-areas .interest-right {margin-top: 0;}
 
+/* ARTS SU APP PAGE =======================================================*/
+img.lo-fi-figma, img.hi-fi-figma {
+  width: 30px;
+    height: 30px;
+    background: #ffffff;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
 
 /* Diana's Breakpoints Viewport
 ========================================================================== 
