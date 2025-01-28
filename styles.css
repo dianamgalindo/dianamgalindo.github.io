@@ -398,6 +398,8 @@ p, li {
   word-wrap: break-word;
   color: #000000;
 }
+
+h4 {font-size: 1.2rem;}
 span, a{
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -1080,6 +1082,11 @@ img.lo-fi-figma, img.hi-fi-figma {
     margin-right: 10px;
 }
 
+.border {
+  border: solid 1px #dddddd;
+  -webkit-box-shadow: 0px 0px 1px 0px #00000040;
+  box-shadow: 0px 0px 1px 0px #00000040;
+}
 
 /* Diana's Breakpoints Viewport
 ========================================================================== 
