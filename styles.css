@@ -1340,6 +1340,7 @@ img.lo-fi-figma, img.hi-fi-figma {
   .project_description{flex-basis: 56%; }
   .project_description h2 {margin-top: 0;}
   .sub_container {flex-basis: 48%;}
+  .sub_container.box_spacing {flex-basis: 49%;}
 
   .home_support_images {
     display: flex;
